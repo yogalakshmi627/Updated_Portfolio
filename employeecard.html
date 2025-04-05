@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link rel="stylesheet" 
+          href= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="shortcut icon" href="https://www.flaticon.com/free-icons/user" title="user icons" type="image/x-icon">
+    <style>
+        body{
+            text-align: center;
+            
+        }
+        .topleft{
+            position: absolute;
+            top: 8px;
+            left: 18px;
+
+        }
+        .middle{
+            position: absolute;
+            left: 18px;
+
+        }
+        .second{
+            position: absolute;
+            right: 18px;
+
+        }
+        
+        .center{
+            text-align: center;
+    margin: auto;
+    width: 40%;
+    border: 3px solid #73ad21;
+    background-color: #73ad21;
+    border-radius: 5px;
+    padding: 0%;
+}
+p{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+.cent{
+            text-align: center;
+    margin: auto;
+    width: 20%;
+    border: 3px solid #73ad21;
+    background-color: #73ad21;
+    border-radius: 5px;
+    padding: 0%;
+}
+/* Whole html box designing */
+html { 
+    text-align: center;
+        box-sizing: border-box; 
+    } 
+   /* Body width fixing */
+   body { 
+        max-width: 100%;
+        text-align: center; 
+    } 
+   
+  
+    /* Box sizing depending on parent */
+    *, 
+    *:before, 
+    *:after { 
+        box-sizing: inherit; 
+    } 
+  
+    /* Styling column */
+    .column { 
+    
+        float: left;
+        width: 33%; 
+        margin-bottom: 16px; 
+        padding: 2px 10px; 
+    
+           
+
+    }  
+  /* Column width change depends 
+          on screen size */
+          @media screen and (max-width: 670px) { 
+        .column { 
+        
+            width: 100%; 
+            text-align: none; 
+        } 
+    } 
+    .colum { 
+    float: left;
+    width: 25%; 
+    margin-bottom: 16px; 
+    padding: 2px 10px; 
+       
+
+}  
+/* Column width change depends 
+      on screen size */
+      @media screen and (max-width: 670px) { 
+    .colum { 
+        width: 100%; 
+        text-align: none; 
+    } 
+} 
+    /* Card designing */
+    .card { 
+        background-color: gray; 
+        border: 1px solid black; 
+        text-align: center;
+    } 
+  
+    .container { 
+        padding: 0 16px; 
+        text-align: center;
+    } 
+  
+    /* Icon styling */
+    .fa { 
+        margin: 10px; 
+        font-size: 68px; 
+    } 
+  
+    .fa:hover { 
+        transform: rotateY(180deg); 
+        transition: transform 0.8s; 
+    } 
+  
+    .container::after, 
+    .row::after { 
+        text-align: center;
+        content: ""; 
+        clear: both; 
+        display: table; 
+    } 
+  
+    /* Button designing */
+    .button { 
+        border: none; 
+        padding: 8px; 
+        color: white; 
+        background-color: #449D44; 
+        text-align: center; 
+        cursor: pointer; 
+        width: 100%; 
+        margin-bottom: 10px; 
+    } 
+  
+    /* Hover effect on button */
+    .button:hover { 
+        background-color: green; 
+    } 
+  
+    /* Margin first member of team */
+    #gfg { 
+        float: none; 
+        margin: auto; 
+    } 
+    </style>
+</head>
+<body>
+   <fieldset style="background-color: blanchedalmond;">
+    <div class="topleft"><i class="fa fa-hand-o-right" aria-hidden="true"></i></div>
+    <div class="center">
+    <h1>SOFT TECH</h1>
+</div>
+    <br>
+    <p>
+        <strong>Welcome to soft tech company where a dedicated team of professionals works <br>together to bring innovation,creativity and expertise to software industry get to known <br>the individuals who make our company thrive.</strong>
+    </p>
+<hr style="width: 50%;border-style: dotted violet;">
+<br>
+<h2>MEET OUR TEAM</h2>
+<br>
+<div class="cent">
+<h3><b>Leadership/Management team</b></h3>
+</div>
+<br>
+<div class="row"> 
+    <div class="column" 
+         id="gfg"> 
+        <div class="card"> 
+            <i class="fa fa-user-circle" 
+               style="font-size:68px;"> 
+              </i> 
+            
+            <div class="container"> 
+                <h2>MONIKA</h2> 
+                <p>CEO & FOUNDER</p> 
+                <button class="button"> 
+                    View 
+                </button> 
+            </div> 
+        </div> 
+    </div> 
+</div> 
+<br>
+<br>
+<div class="row"> 
+    <div class="column"> 
+        <div class="card"> 
+            <i class="fa fa-user-circle" 
+               style="font-size:68px;"></i> 
+            <div class="container"> 
+                <h2>RAJESH</h2> 
+                <p>VP.DEVELOPMENT & GROWTH</p> 
+                <button class="button"> 
+                    View 
+                </button> 
+            </div> 
+        </div> 
+    </div>
+    <div class="column"> 
+        <div class="card"> 
+            <i class="fa fa-user-circle" 
+               style="font-size:68px;"></i> 
+            <div class="container"> 
+                <h2>BHARADHI</h2> 
+                <p>VP.SALES & MARKETING</p> 
+                <button class="button">View</button> 
+            </div> 
+        </div> 
+    </div>
+    <div class="column"> 
+        <div class="card"> 
+            <i class="fa fa-user-circle" 
+               style="font-size:68px;"></i> 
+            <div class="container"> 
+                <h2>RIHANA</h2> 
+                <p>VP.FINANCE & OPERATION</p> 
+                <button class="button"> 
+                    View 
+                </button> 
+            </div> 
+        </div> 
+    </div> 
+    </div>
+    <br>
+    <!--1.second row-->
+    <div class="second"><i class="fa fa-hand-o-left" aria-hidden="true"></i></i></div>
+    <div class="cent">
+        <h3><b>DEVELOPMENT TEAM</b></h3>
+        </div>
+        <br>
+        <br>
+        <div class="row"> 
+            <div class="colum"> 
+                <div class="card"> 
+                    <i class="fa fa-user-circle" 
+                       style="font-size:68px;"></i> 
+                    <div class="container"> 
+                        <h2>CHING</h2> 
+                        <p>TEAM LEAD SE</p> 
+                        <button class="button"> 
+                            View 
+                        </button> 
+                    </div> 
+                </div> 
+            </div> 
+  
+            <div class="colum"> 
+                <div class="card"> 
+                    <i class="fa fa-user-circle" 
+                       style="font-size:68px;"></i> 
+                    <div class="container"> 
+                        <h2>HASHIM</h2> 
+                        <p>SOFTWARE ENGINEER</p> 
+  
+                        <button class="button">View</button> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="colum"> 
+                <div class="card"> 
+                    <i class="fa fa-user-circle" 
+                       style="font-size:68px;"></i> 
+                    <div class="container"> 
+                        <h2>GOMEZ</h2> 
+                        <p>SOFTWARE ENGINEER 2</p> 
+                        <button class="button"> 
+                            View 
+                        </button> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="colum"> 
+                <div class="card"> 
+                    <i class="fa fa-user-circle" 
+                       style="font-size:68px;"></i> 
+                    <div class="container"> 
+                        <h2>REEMA</h2> 
+                        <p>SOFTWARE ENGINEER 3</p> 
+                        <button class="button"> 
+                            View 
+                        </button> 
+                    </div> 
+                </div> 
+            </div> 
+        </div>
+        <br>
+        <br> 
+        <div class="row"> 
+            <div class="column"> 
+                <div class="card"> 
+                    <i class="fa fa-user-circle" 
+                       style="font-size:68px;"></i> 
+                    <div class="container"> 
+                        <h2>LEE</h2> 
+                        <p>SOFTWARE ENGINEER 4</p> 
+                        <button class="button"> 
+                            View 
+                        </button> 
+                    </div> 
+                </div> 
+            </div> 
+  
+            <div class="column"> 
+                <div class="card"> 
+                    <i class="fa fa-user-circle" 
+                       style="font-size:68px;"></i> 
+                    <div class="container"> 
+                        <h2>AHMED</h2> 
+                        <p>SOFTWARE ENGINEER 5</p> 
+  
+                        <button class="button">View</button> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="column"> 
+                <div class="card"> 
+                    <i class="fa fa-user-circle" 
+                       style="font-size:68px;"></i> 
+                    <div class="container"> 
+                        <h2>SURESH</h2> 
+                        <p>SOFTWARE ENGINEER 6</p> 
+                       
+                        <button class="button"> 
+                            View 
+                        </button> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+        <br>
+        <br>
+        <div class="middle">
+            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+        </div>
+        <br>
+        <div class="cent">
+            <h3><b>SALES AND MARKETING TEAM</b></h3>
+            </div>
+            <br>
+            <br>
+        <div class="row"> 
+            <div class="colum"> 
+                <div class="card"> 
+                    <i class="fa fa-user-circle" 
+                       style="font-size:68px;"></i> 
+                    <div class="container"> 
+                        <h2>RAMYA</h2> 
+                        <p>TEAM LEAD</p> 
+  
+                        <button class="button"> 
+                            View 
+                        </button> 
+                    </div> 
+                </div> 
+            </div> 
+  
+            <div class="colum"> 
+                <div class="card"> 
+                    <i class="fa fa-user-circle" 
+                       style="font-size:68px;"></i> 
+                    <div class="container"> 
+                        <h2>MADHU</h2> 
+                        <p>SALES OFFICER</p> 
+                        <button class="button">View</button> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="colum"> 
+                <div class="card"> 
+                    <i class="fa fa-user-circle" 
+                       style="font-size:68px;"></i> 
+                    <div class="container"> 
+                        <h2>JOE</h2> 
+                        <p>SALES OFFICER</p> 
+                        <button class="button"> 
+                            View 
+                        </button> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="colum"> 
+                <div class="card"> 
+                    <i class="fa fa-user-circle" 
+                       style="font-size:68px;"></i> 
+                    <div class="container"> 
+                        <h2>SHUCHI</h2> 
+                        <p>SALES OFFICER</p> 
+                        
+                        <button class="button"> 
+                            View 
+                        </button> 
+                    </div> 
+                </div> 
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row"> 
+            <div class="column"> 
+                <div class="card"> 
+                    <i class="fa fa-user-circle" 
+                       style="font-size:68px;"></i> 
+                    <div class="container"> 
+                        <h2>ARUN</h2> 
+                        <p>MARKETING OFFICER</p>
+                        <button class="button"> 
+                            View 
+                        </button> 
+                    </div> 
+                </div> 
+            </div> 
+  
+            <div class="column"> 
+                <div class="card"> 
+                    <i class="fa fa-user-circle" 
+                       style="font-size:68px;"></i> 
+                    <div class="container"> 
+                        <h2>KEERTHI</h2> 
+                        <p>MARKETING OFFICER</p> 
+  
+                        <button class="button">View</button> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="column"> 
+                <div class="card"> 
+                    <i class="fa fa-user-circle" 
+                       style="font-size:68px;"></i> 
+                    <div class="container"> 
+                        <h2>RAJ</h2> 
+                        <p>MARKETING OFFICER</p> 
+                        <button class="button"> 
+                            View 
+                        </button>
+
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+        </fieldset>
+</body>
+</html>

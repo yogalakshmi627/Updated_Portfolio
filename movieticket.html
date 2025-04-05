@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: blueviolet;
+            width: 100vw;
+            height: 100vh;
+            
+        }
+   h1{
+    text-align: center;
+    color: rgb(229, 212, 245);
+   }
+   .main-container{
+    background-color: rgb(213, 187, 238);
+    border: 3px solid rgb(114, 8, 114);
+    border-radius: 50px;
+    height: 50%;
+    margin-left: 25%;
+    width: 50%;
+   }
+   .container{
+   display: grid;
+width: 45%;
+margin-left: 28%;
+padding: 10px;
+   }
+   .payment{
+    display: grid;
+    width: 45%;
+margin-left: 28%;
+padding: 10px 10px 20px ;
+   }
+   label{
+    color: rgb(100, 64, 133);
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 1.5;
+   }
+   input{
+    border: 2px solid rgb(114, 8, 114);
+    border-radius: 10px;
+    font-size: 15px;
+padding: 10px;
+   }
+   input:focus{
+    outline: none;
+    background-color: rgb(100, 64, 133);
+    color: antiquewhite;
+   }
+   select{
+    border: 2px solid rgb(114, 8, 114);
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 10px;
+   }
+select:focus{
+    outline: none;
+    background-color: rgb(100, 64, 133);
+    color: antiquewhite;
+}
+.btn{
+    width: 80px;
+    padding: 10px 10px;
+    border: 2px solid rgb(100, 64, 133) ;
+    color: rgb(100, 64, 133);
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    border:none;
+    background-color: rgb(100, 64, 133);
+    color: antiquewhite;
+}
+    </style>
+</head>
+<body>
+
+    <h1>MOVIE TICKETS RESERVATION</h1>
+    <form onsubmit="return handle()">
+    <div class="main-container">
+    <div class="container">
+       
+        
+            <label>FIRSTNAME:</label>
+            <input id="name" type="text" name="firstname" size="15"/>
+            <label for="phone">PHONE</label>
+            <!--<input type="tel" name="country code" value="+91" size="2"/>-->
+            <input  id="phone" type="number"name="phone" size="10"/>
+            <label>SELECT MOVIE</label>
+            <select id="movie">
+                <option value="movies">Select A Movie</option>
+                <option value="joe">joe</option>
+                <option value="kgf">kgf</option>
+                <option value="devil">devil</option>
+                <option value="sevappi">sevappi</option>
+                <option value="jenni">jenni</option>
+                <option value="vivesini">vivesini</option>
+                <option value="veeman">veeman</option>
+                <option value="dune">dune</option>
+            </select>
+            <label>SELECT AVAILABLE SEAT</label>
+            <select id="seats">
+                <option value="SEATS">Select A Seat</option>
+                <option value="R 3">R 3</option>
+                <option value="L 21">L 21</option>
+                <option value="L 33">L 33</option>
+                <option value="R 13">R 13</option>
+                <option value="L 42">L 42</option>
+                <option value="R 22">R 22</option>
+                <option value="R 14">R 14</option>
+                <option value="R 15">R 15</option>
+
+            </select>
+            <label>SHOW DATE</label>
+            <input  type="date" id="date" name="show"/>
+            <label>SHOW TIME</label>
+            <input type="time" id="time" name="show"/>
+        </div>
+            <div class="payment">
+                <h3>PAYMENT</h3>
+                <label for="cname">NAME ON CARD</label>
+                <input type="text" id="cardname" name="cardname" placeholder="card name">
+                
+                <label for="ccnum">UPI PIN</label>
+                <input type="text" id="upipin" name="cardnumber" placeholder="1111-2222-3333-4444">
+                
+                <label for="ccnum">AMOUNT</label>
+                <input type="text" id="amount" name="amount" placeholder="1000">
+                <label>
+                    <input id="terms" type="checkbox" checked="checked" name="sameadr"> terms & policy
+                  </label>
+                  <p id="demo"></p>
+                  <button class="btn" type="submit">SUBMIT</button>
+            </div>  
+        
+    </div>
+</form>
+
+
+
+<script>
+     const handle=()=>{
+    let name=document.getElementById("name").value;
+    let phone=document.getElementById("phone").value;
+    let movie=document.getElementById("movie").value;
+    let seats=document.getElementById("seats").value;
+    let cardname=document.getElementById("cardname").value;
+    let upipin=document.getElementById("upipin").value;
+    let amount=document.getElementById("amount").value
+    let demo=document.getElementById("demo");
+
+            //name
+            if(name.trim()===""){
+               demo.innerHTML="Please Enter Your Good Name";
+               demo.style.color="red";
+               return false;
+            }
+            
+            //phone
+            else if(phone.trim()===""){
+               demo.innerHTML="Enter The Valid Number"
+                demo.style.color="red";
+                return false;
+            }
+            //movie
+            else if(movie==="movies"||movie===""){
+                 demo.innerHTML="Select Any One Movie"
+                demo.style.color="red";
+                return false;
+            }
+            //seat
+            else if(seats==="SEATS"||seats===""){
+                 demo.innerHTML="Select Any Seats"
+                demo.style.color="red";
+                return false;
+            }
+            //name card
+            else if(cardname.trim()===""){
+               demo.innerHTML="Enter The Card Name"
+                demo.style.color="red";
+                return false;
+            }
+            //upipin
+            else if(upipin.trim()===""){
+               demo.innerHTML="Enter The Card Number"
+                demo.style.color="red";
+                return false;
+            }
+            else if(amount.trim()===""){
+               demo.innerHTML="Enter The Amount"
+                demo.style.color="red";
+                return false;
+            }
+            else{
+             alert("Movie Reserved Successfullt!!!");
+             
+                return true;
+            }
+        }
+</script>
+</body>
+</html>
